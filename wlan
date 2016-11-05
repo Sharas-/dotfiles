@@ -1,0 +1,2 @@
+wpa_supplicant -i wlan0 -B -c pass.txt;
+dhcpcd wlan0
