@@ -1,2 +1,4 @@
-wpa_supplicant -i wlan0 -B -c pass.txt;
-dhcpcd wlan0
+pkill wpa_supplicant;
+dhcpcd -x wlan0;
+
+wpa_supplicant -i wlan0 -B -c pass.txt & dhcpcd wlan0

@@ -1,0 +1,11 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#TabsToolbar 
+{ 
+	padding: 0px !important; 
+	
+}
+#nav-bar 
+{
+	padding-bottom: 0px !important;
+}
