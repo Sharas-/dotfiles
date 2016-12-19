@@ -13,7 +13,7 @@ alias grep='grep --color=auto'
 sudo loadkeys ~/.config/caps2ctrl.keymap
 
 export PATH="${PATH}:/home/sharas/bin"
-
+export EDITOR=vim
 
 red="\[\e[0;31m\]"
 green="\[\e[0;32m\]"
