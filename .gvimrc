@@ -9,10 +9,11 @@ set nocompatible " Use Vim defaults (much better!), Vi is for 70's programmers!
 set viminfo='20,\"50 
 set wrap " wraps longs lines to screen size
 
-colorscheme darkblue
+colorscheme dusk
 " Use different color schemes for different set of files.
 " au BufEnter *.* colorscheme zellner
 au BufEnter *.log colorscheme desert
 set vb t_vb= " stop beeping or flashing the screen
 win 204 100 " The window height
+
 
