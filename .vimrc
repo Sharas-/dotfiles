@@ -8,3 +8,5 @@ set spell
 set autochdir
 "enable backspace
 set backspace=indent,eol,start
+"enable repeat on visual block
+vnoremap . :normal .<CR>
