@@ -10,7 +10,8 @@ alias la='ls -a'
 alias sudo='sudo -E'
 alias grep='grep --color=auto'
 
-sudo loadkeys ~/.config/caps2ctrl.keymap
+sudo loadkeys ~/.config/dotfiles/keyremap;
+xmodmap ~/.config/dotfiles/.xmodmap
 
 export PATH="${PATH}:/home/sharas/bin"
 export EDITOR=vim

@@ -1,7 +1,0 @@
-echo "--- using SSID $1 ---" 
-dhcpcd -x wlan0
-ip link set wlan0 down
-ip link set wlan0 up
-iw dev wlan0 connect "$1"
-dhcpcd wlan0
-
