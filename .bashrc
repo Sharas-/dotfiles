@@ -11,7 +11,7 @@ alias sudo='sudo -E'
 alias grep='grep --color=auto'
 
 sudo loadkeys ~/.config/dotfiles/keyremap;
-xmodmap ~/.config/dotfiles/.xmodmap
+setxkbmap -layout us -option ctrl:nocaps
 
 export PATH="${PATH}:/home/sharas/bin"
 export EDITOR=vim
