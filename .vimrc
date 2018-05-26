@@ -1,3 +1,4 @@
+let @t=':term ++closeH60<'
 inoremap jk <ESC>
 filetype plugin indent on 
 syntax on
@@ -10,3 +11,11 @@ set autochdir
 set backspace=indent,eol,start
 "enable repeat on visual block
 vnoremap . :normal .<CR>
+set background=dark
+colorscheme solarized
+set shell=bash\ -i
+"remap window split navigation 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>

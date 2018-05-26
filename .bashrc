@@ -11,7 +11,6 @@ alias sudo='sudo -E'
 alias grep='grep --color=auto'
 
 sudo loadkeys ~/.config/dotfiles/keyremap;
-setxkbmap -layout us -option ctrl:nocaps
 
 export PATH="${PATH}:/home/sharas/bin"
 export EDITOR=vim
@@ -27,3 +26,16 @@ orange="\[\e[0;91m\]"
 reset="\[\e[39m\]"
 
 PS1="${green}-> \w\n${cyan}\u@\h${reset}\$ "
+
+if [ -f ~/.git-prompt.sh ]; 
+then
+	. ~/.git-prompt.sh
+	GIT_PS1_SHOWDIRTYSTATE=true
+	GIT_PS1_SHOWCOLORHINTS=true
+	GIT_PS1_UNTRACKEDFILES=true
+	#PROMPT_COMMAND="__git_ps1 '\u@\h:\w' '\\$ '"
+	PROMPT_COMMAND="__git_ps1 '${green}-> \w' '\n${cyan}\u@\h${reset}\$ '"
+fi
+#set auto complete after sudo 
+complete -cf sudo
+

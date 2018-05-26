@@ -14,6 +14,7 @@ colorscheme dusk
 " au BufEnter *.* colorscheme zellner
 au BufEnter *.log colorscheme desert
 set vb t_vb= " stop beeping or flashing the screen
-win 204 100 " The window height
-
+set columns=999
+set lines=999
+set guifont=Noto\ Mono\ 12
 
