@@ -40,5 +40,5 @@ fi
 complete -cf sudo
 
 #disable nvidia discrete graphics
-sudo modprobe bbswitch load_state=0 unload_state=1 && echo "nvidia discrete graphics state: $(cat /proc/acpi/bbswitch)"
+#sudo modprobe bbswitch load_state=0 unload_state=1 && echo "nvidia discrete graphics state: $(cat /proc/acpi/bbswitch)"
 
