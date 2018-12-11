@@ -4,7 +4,7 @@ filetype plugin indent on
 syntax on
 set encoding=utf-8
 set ignorecase
-set spell
+set nospell
 "set working dir to file path
 set autochdir
 "enable backspace
@@ -35,3 +35,7 @@ set nowritebackup
   " 3 -> blinking underscore
   " 5 -> blinking vertical bar
   " 6 -> solid vertical bar
+ 
+ 
+set laststatus=2
+set statusline=%F%m\ %y%=%c,%l/%L\ %P
