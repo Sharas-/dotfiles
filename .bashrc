@@ -9,11 +9,14 @@ alias ls='ls --color=auto'
 alias la='ls -a'
 alias sudo='sudo -E'
 alias grep='grep --color=auto'
+alias vim='nvim' 
 
 sudo loadkeys ~/.config/dotfiles/keyremap;
 
 export PATH="${PATH}:/home/sharas/bin"
-export EDITOR=vim
+export EDITOR=nvim
+HISTSIZE=1000
+HISTFILESIZE=$HISTSIZE
 
 red="\[\e[0;31m\]"
 green="\[\e[0;32m\]"
@@ -40,5 +43,7 @@ fi
 complete -cf sudo
 
 #disable nvidia discrete graphics
-sudo modprobe bbswitch load_state=0 unload_state=1 && echo "nvidia discrete graphics state: $(cat /proc/acpi/bbswitch)"
-
+#disable ctrl+s blocking on terminal
+stty -ixon
+#disable ctrl+d exit shortcut 
+set -o ignoreeof
