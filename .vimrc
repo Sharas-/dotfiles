@@ -55,8 +55,10 @@ set mouse=a
 "set global option for :s
 set gdefault
 
-augroup vimrc-incsearch-highlight
-  autocmd!
-  autocmd CmdlineEnter /,\? :set hlsearch
-  autocmd CmdlineLeave /,\? :set nohlsearch
-augroup END
+"augroup vimrc-incsearch-highlight
+"  autocmd!
+"  autocmd CmdlineEnter /,\? :set hlsearch
+"  autocmd CmdlineLeave /,\? :set nohlsearch
+"augroup END
+"disable command mode key
+nnoremap Q <nop>
